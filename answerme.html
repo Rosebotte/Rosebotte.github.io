@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rosebotte Software Manufacture</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+
+<body>
+<div id="head">
+ <div id="head_cen">
+  <div id="head_sup" class="head_height">
+  
+    <h1 class="logo"><a href="index.html">Rosebotte</a></h1>
+	<div style="margin-left:150px; float:left;">
+		<a href="consult.html"><img style="border: 0px solid ; height: 198px; width: 198px;" alt="Rosebotte Consulting" title="Rosebotte Consulting" src="images/RBConsult.png"></a>
+		<a href="answerme.html"><img style="border: 0px solid ; height: 198px; width: 198px;" alt="AnswerMe" title="AnswerMe" src="images/ame_site_logo.png"></a>	
+		<a href="atimer.html"><img style="border: 0px solid ; height: 198px; width: 198px;" alt="Artless timer" title="Artless timer" src="images/at_logo.png"></a>
+	</div>
+
+  </div>
+ </div>
+</div>
+<div id="content">
+ <div id="content_cen">
+  <div id="content_sup" class="head_pad">
+   <div id="welcom_pan">
+    <h2>Rosebotte AnswerMe</h2>
+
+
+
+<p>Rosebotte AnswerMe is a programm platform created to allow your android device execute commands received via SMS. In this version it is possible to receive email or SMS with the lists of missed calls and unread SMS. AnswerMe can turn on Wi-Fi connection or make sending via mobile data if allowed, then it turns Wi-Fi off. 
+</p>
+
+<h3>Main use cases for AnswerMe.</h3>
+
+<p>
+1. If you forget your phone at home you can just send SMS from your collegue's device or from the Iternet or Skype to receive the list of missed calls and SMS with content.<br><br>
+
+2. You are going to go on vacation abroad and you want to leave you phone at home thus not to use roaming, but you are curious who had called and sent SMS. 
+</p>
+
+<h3>Instructions.</h3>
+
+<p>
+To do that just install Rosebotte AnswerMe application on your android phone, adjust email settings (for gmail it is enough just to change login and password). The password is stored securily on your device, although of course you can use application specific password, for example, for gmail. Then specify the commands' patterns that AnswerMe will search in each incoming SMS. Try once to ensure setting are good. Also you may specify whether it's allowed to start Wi-Fi when it is turned off, and whether it's allowed to use mobile data in case of Wi-Fi connection absence. But even if you left this options unmarked you can override this settings by specifying special flags in the SMS containing your command.
+<br><br>
+To receive AnswerMe email with all information needed just send specific SMS to your device. This SMS must contain the pattern you specified in settings for email, the PIN code and optionally flags for overriding settings mentioned above. Use "FW" (stands for force Wi-Fi) to enable "Start Wi-Fi" setting for this time and "FD" (stands for force data) for "Use Mobile Data". All this specificators could be space-separated or not.
+<br><br>
+If your device is not connected with Wi-Fi at the moment of processing your AnswerMe request, then the programm will check "Start Wi-Fi" setting (or flag if you have provided it in SMS). If it is not allowed to start Wi-Fi, then, if option "Use Mobile Data" is set on (or you have provided the "FD" flag in SMS) and mobile data is activated, AnswerMe will make an attempt to send email via mobile data connection. But if it's allowed to start Wi-Fi then next series of attempts will take place: the programm will  try to start Wi-Fi on your device, try to auto-connect to network, try to search known networks and connect to one of them, try to search open networks around device and will try to connect to strongest network. If the programm will succeed and connect to one of networks with Internet connection available, then the AnswerMe email will be sent by using account you have provided in the settings and Wi-Fi will be turned off. If the network search fails, then Wi-Fi adaptor will be turned off and programm will try to send email via mobile data as described above.
+<br><br>
+To receive AnswerMe SMS you should do the same: provide the pattern and the PIN, but remember to add telephone number in international standard form, without additional symbols such as braces.
+<br><br>
+Note, that patterns are intentionally case-sensitive and flags are not.
+<br><br>
+For example. You set "ANSWERMAIL" as a pattern in correspond setting for receiving AnswerMe email and 2233 as a PIN. And for SMS "ANSWERSMS" and 5577, respectively. Then just send an SMS with content like bellow, all of them are correct:<br><br>
+ANSWERMAIL 2233<br>
+ANSWERMAIL2233<br>
+ANSWERMAIL FW 2233<br>
+ANSWERMAIL Fd 2233 fw<br>
+2233 ANSWERMAIL<br>
+<br>
+ANSWERSMS 5577 +441237005060<br>
+5577 ANSWERSMS +44 123 7005060 
+
+
+</p>
+
+<h3>Versions.</h3>
+
+<p>
+There are two versions of Rosebotte AnswerMe programm. Full version can send either emails and SMS, and the Green Edition is for emails only.<br>
+<img style="border: 0px solid ; height: 72px; width: 72px;" alt="AMe icon" title="AMe" src="images/AME_icon_s_e.png">
+<a href="https://play.google.com/store/apps/details?id=com.rosebotte.answerme">  <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" /></a>
+<a href="images/qrame.png"><img style="border: 0px solid ; height: 100px; width: 100px;" alt="Click to enlarge" title="Click to enlarge" src="images/qrame.png"></a>
+<br>
+<img style="border: 0px solid ; height: 72px; width: 72px;" alt="AMe icon" title="AMe" src="images/AME_icon_s_g.png">
+<a href="https://play.google.com/store/apps/details?id=com.rosebotte.answermee">  <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" /></a>
+<a href="images/qramee.png"><img style="border: 0px solid ; height: 100px; width: 100px;" alt="Click to enlarge" title="Click to enlarge" src="images/qramee.png"></a>
+
+</p>
+
+<h3>Screenshots.</h3>
+
+<p>
+<a href="images/ame_scr_1.png"><img style="border: 0px solid ; height: 250px; width: 167px;" alt="AnswerMe" title="AnswerMe" src="images/ame_scr_1.png"></a>
+<a href="images/ame_scr_2.png"><img style="border: 0px solid ; height: 250px; width: 167px;" alt="AnswerMe" title="AnswerMe" src="images/ame_scr_2.png"></a>
+
+</p>
+
+
+
+
+   </div>
+  </div>
+ </div>
+</div>
+<div id="foot">
+ <div id="foot_cen">
+ <h6><a href="index.html">Rosebotte</a></h6>
+    <p><img style="border: 0px solid ; height: 25px; width: 339px; float:center;" alt="ContactUs" title="ContactUs" src="images/RB_site_contuctUs.png"></p>
+    <p>© Rosebotte 2009-2013. Design based on: <a href="http://www.templateworld.com" target="_blank">Template World</a></p>
+ </div>
+</div>
+</body>
+</html>
